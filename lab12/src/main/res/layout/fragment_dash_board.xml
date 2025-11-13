@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    tools:context=".ui.dashboard.DashBoardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the first number"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the second number"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/text_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result: 0"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:background="#FFF8E1"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="1"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#4CAF50"
+                android:text="+"
+                android:textSize="22sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#FF9800"
+                android:text="-"
+                android:textSize="22sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#2196F3"
+                android:text="×"
+                android:textSize="22sp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:backgroundTint="#F44336"
+                android:text="÷"
+                android:textSize="22sp"
+                app:cornerRadius="12dp" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

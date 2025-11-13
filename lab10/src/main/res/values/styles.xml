@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Inactive / Disabled -->
+    <style name="MyButtonDisabled" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#D3D3D3</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Active / Enabled -->
+    <style name="MyButtonActive" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#000000</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.Medium" parent="">
+    </style>
+
+</resources>

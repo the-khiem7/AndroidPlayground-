@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Bottom Control Panel with Modern Design -->
+    <LinearLayout
+        android:id="@+id/controlsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/control_panel_background"
+        android:elevation="12dp">
+
+        <!-- Map Type Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Map Type"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="8dp" />
+
+            <!-- Map Type Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:spacing="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnNormal"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Normal Map"
+                    android:background="@drawable/btn_map_type_state"
+                    android:src="@drawable/ic_map_normal"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSatellite"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Satellite Map"
+                    android:background="@drawable/btn_map_type_state"
+                    android:src="@drawable/ic_map_satellite"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnHybrid"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Hybrid Map"
+                    android:background="@drawable/btn_map_type_state"
+                    android:src="@drawable/ic_map_hybrid"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnTerrain"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Terrain Map"
+                    android:background="@drawable/btn_map_type_state"
+                    android:src="@drawable/ic_map_terrain"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#40FFFFFF"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Action Section -->
+        <LinearLayout
+            android:id="@+id/controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actions"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="8dp" />
+
+            <!-- Action Buttons Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:spacing="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnMyLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="My Location"
+                    android:background="@drawable/btn_action_state"
+                    android:src="@drawable/ic_location"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnAddMarker"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Add Marker"
+                    android:background="@drawable/btn_action_state"
+                    android:src="@drawable/ic_add_marker"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnClearMarkers"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Clear Markers"
+                    android:background="@drawable/btn_action_danger_state"
+                    android:src="@drawable/ic_clear"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

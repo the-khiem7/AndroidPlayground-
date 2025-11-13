@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnLab1LinearA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout A"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnLab1LinearB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Linear Layout B"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnLab1Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnLab1Constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Constraint Layout" />
+</LinearLayout>

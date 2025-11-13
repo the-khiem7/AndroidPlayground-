@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+
+    <!-- Tay đẩy -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M2,4h3v2H2z" />
+
+    <!-- Thân giỏ (dạng hình thang) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M5,6h16l-3,7H8z" />
+
+    <!-- Bánh xe trái -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M6,16h3v3H6z" />
+
+    <!-- Bánh xe phải -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M16,16h3v3h-3z" />
+</vector>

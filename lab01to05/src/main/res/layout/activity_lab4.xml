@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp"
+    android:background="@drawable/menu_bg">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="🍽️ Đặt thức ăn và đồ uống"
+        android:textColor="#333"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFood"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn Thức Ăn"
+        android:backgroundTint="#FF9800"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnDrink"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Chọn Đồ Uống"
+        android:backgroundTint="#2196F3"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Thoát"
+        android:backgroundTint="#E53935"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Reset đơn hàng"
+        android:backgroundTint="#9E9E9E"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"/>
+
+
+    <!-- List hiển thị các món đã chọn -->
+    <ListView
+        android:id="@+id/lvOrder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 0 VNĐ"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận đặt hàng"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

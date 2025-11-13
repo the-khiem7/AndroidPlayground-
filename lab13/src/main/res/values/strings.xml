@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FireAuth</string>
+    <string name="title_welcome">Welcome</string>
+    <string name="subtitle">Firebase Authentication</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="action_resend_verification">Resend Verification Email</string>
+    <string name="action_check_verification">Check Verification Status</string>
+    <string name="status_not_logged">Status: Not logged in</string>
+    <string name="footer_hint">Tap Sign Up to create an account</string>
+    <string name="success">Success</string>
+    <string name="email_icon_desc">Email icon</string>
+    <string name="password_icon_desc">Password icon</string>
+</resources>

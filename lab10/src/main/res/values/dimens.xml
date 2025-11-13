@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="product_card_radius">12dp</dimen>
+    <dimen name="product_card_spacing">6dp</dimen>
+</resources>

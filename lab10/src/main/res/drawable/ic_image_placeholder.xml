@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Nền -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0"/>
+            <stroke android:width="1dp" android:color="#BDBDBD"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Thanh "đất" phía dưới -->
+    <item android:gravity="bottom">
+        <shape android:shape="rectangle">
+            <size android:height="18dp"/>
+            <solid android:color="#CFCFCF"/>
+            <corners android:bottomLeftRadius="8dp" android:bottomRightRadius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- "Mặt trời" góc trên-phải -->
+    <item android:top="8dp" android:right="8dp">
+        <shape android:shape="oval">
+            <size android:width="10dp" android:height="10dp"/>
+            <solid android:color="#FFC107"/>
+        </shape>
+    </item>
+
+</layer-list>

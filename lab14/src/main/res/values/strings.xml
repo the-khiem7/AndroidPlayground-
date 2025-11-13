@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NguyenVanDuyKhiem_SE180168_Lab14_GooleMap</string>
+    <string name="map_type_normal">Normal map</string>
+    <string name="map_type_satellite">Satellite map</string>
+    <string name="map_type_hybrid">Hybrid map</string>
+    <string name="map_type_terrain">Terrain map</string>
+    <string name="map_type_switched">Switched to %1$s</string>
+    <string name="map_type_selected">%1$s selected</string>
+</resources>

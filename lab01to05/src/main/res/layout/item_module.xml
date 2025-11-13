@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Ảnh bên trái -->
+    <ImageView
+        android:id="@+id/imgModule"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Module Image"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="10dp" />
+
+    <!-- Nội dung giữa -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ListView trong Android"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ListView là thành phần dùng để hiển thị nhiều mục..."
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:maxLines="2"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <!-- Nhãn bên phải -->
+    <TextView
+        android:id="@+id/tvPlatform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#6200EE" />
+</LinearLayout>
