@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.activity_main_lab11);
 
             // Repo
             repo = new TraineeRepository();

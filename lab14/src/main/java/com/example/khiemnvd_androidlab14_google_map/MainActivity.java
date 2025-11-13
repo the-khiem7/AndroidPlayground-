@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize osmdroid configuration
         Configuration.getInstance().load(this, PreferenceManager.getDefaultSharedPreferences(this));
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_lab14);
 
         // Initialize location client
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
