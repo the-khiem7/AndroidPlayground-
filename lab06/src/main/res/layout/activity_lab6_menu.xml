@@ -1,88 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorSurfaceVariant">
+    android:background="@drawable/bg_playground_gradient"
+    android:paddingTop="32dp">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         style="@style/Widget.Material3.Toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:backgroundTint="?attr/colorPrimaryContainer"
+        android:paddingBottom="8dp"
         android:title="Lab 6 – Option Menu"
         android:subtitle="Khám phá 3 phong cách menu"
-        app:navigationIcon="@drawable/ic_arrow_back" />
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/heroCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/pg_surface_highlight"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So sánh Option, Context và Popup menu"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
+                android:textColor="@color/pg_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Thử từng loại để xem cách inflate menu và bắt sự kiện."
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="@color/pg_text_muted" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/heroCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="0dp"
-                app:cardBackgroundColor="?attr/colorSurface">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="So sánh Option, Context và Popup menu"
-                        android:textAppearance="?attr/textAppearanceTitleMedium"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Thử từng loại để xem cách inflate menu và bắt sự kiện."
-                        android:textAppearance="?attr/textAppearanceBodyMedium" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab6Exercise1"
-                style="@style/Widget.Material3.Button.TonalButton"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:text="Exercise 1 – Options menu" />
+                android:text="Chọn loại menu"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="@color/pg_text"
+                android:textStyle="bold" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab6Exercise2"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:text="Exercise 2 – Context menu" />
+            <include
+                android:id="@+id/cardLab6Exercise1"
+                layout="@layout/showcase_option_card"
+                android:layout_marginBottom="12dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab6Exercise3"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Exercise 3 – Popup menu" />
+            <include
+                android:id="@+id/cardLab6Exercise2"
+                layout="@layout/showcase_option_card"
+                android:layout_marginBottom="12dp" />
+
+            <include
+                android:id="@+id/cardLab6Exercise3"
+                layout="@layout/showcase_option_card" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

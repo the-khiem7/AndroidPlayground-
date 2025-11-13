@@ -1,101 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorSurfaceVariant">
+    android:background="@drawable/bg_playground_gradient"
+    android:paddingTop="32dp">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         style="@style/Widget.Material3.Toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:backgroundTint="?attr/colorPrimaryContainer"
+        android:paddingBottom="8dp"
         android:title="Lab 1 – Layouts"
         android:subtitle="Chọn bố cục bạn muốn xem"
-        app:navigationIcon="@drawable/ic_arrow_back" />
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp"
-        android:clipToPadding="false"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/heroCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/pg_surface_highlight"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:showDividers="middle"
-            android:dividerPadding="16dp"
-            android:divider="@null"
-            android:gravity="top">
+            android:padding="20dp">
 
-            <com.google.android.material.card.MaterialCardView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="0dp"
-                app:cardBackgroundColor="?attr/colorSurface">
+                android:text="Thử nhanh các bố cục cơ bản"
+                android:textAppearance="?attr/textAppearanceTitleLarge"
+                android:textColor="@color/pg_text"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Thử nhanh các bố cục cơ bản"
-                        android:textAppearance="?attr/textAppearanceTitleMedium"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Linear, Relative và Constraint sẽ hiển thị các cách tổ chức view phổ biến."
-                        android:textAppearance="?attr/textAppearanceBodyMedium" />
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab1LinearA"
-                style="@style/Widget.Material3.Button.TonalButton"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:text="Linear Layout – phiên bản A" />
+                android:layout_marginTop="8dp"
+                android:text="Linear, Relative và Constraint sẽ hiển thị các cách tổ chức view phổ biến."
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="@color/pg_text_muted" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab1LinearB"
-                style="@style/Widget.Material3.Button.TonalButton"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/heroCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:text="Linear Layout – phiên bản B" />
+                android:text="Chọn demo"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:textColor="@color/pg_text"
+                android:textStyle="bold" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab1Relative"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:text="Relative Layout demo" />
+            <include
+                android:id="@+id/cardLab1LinearA"
+                layout="@layout/showcase_option_card"
+                android:layout_marginBottom="12dp" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnLab1Constraint"
-                style="@style/Widget.Material3.Button.TonalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Constraint Layout demo" />
+            <include
+                android:id="@+id/cardLab1LinearB"
+                layout="@layout/showcase_option_card"
+                android:layout_marginBottom="12dp" />
+
+            <include
+                android:id="@+id/cardLab1Relative"
+                layout="@layout/showcase_option_card"
+                android:layout_marginBottom="12dp" />
+
+            <include
+                android:id="@+id/cardLab1Constraint"
+                layout="@layout/showcase_option_card" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
