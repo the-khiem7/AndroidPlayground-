@@ -2,4 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="pg_background">#F8FAFF</color>
+    <color name="pg_surface">#FFFFFF</color>
+    <color name="pg_surface_highlight">#EDF0FF</color>
+    <color name="pg_primary">#1E56FF</color>
+    <color name="pg_on_primary">#FFFFFF</color>
+    <color name="pg_secondary">#F7873E</color>
+    <color name="pg_on_secondary">#1B1B1B</color>
+    <color name="pg_outline">#CDD8F1</color>
+    <color name="pg_text_muted">#6B7A95</color>
+
+    <color name="lab_accent_1">#FF8A65</color>
+    <color name="lab_accent_2">#4DB6AC</color>
+    <color name="lab_accent_3">#9575CD</color>
+    <color name="lab_accent_4">#F06292</color>
+    <color name="lab_accent_5">#4FC3F7</color>
+    <color name="lab_accent_6">#AED581</color>
 </resources>

@@ -6,6 +6,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 /**
  * Simple hub to launch the different layout demos that belong to Lab 1.
  */
@@ -15,6 +17,9 @@ public class Lab1ShowcaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab1_showcase);
+
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(v -> finish());
 
         Button btnLinearA = findViewById(R.id.btnLab1LinearA);
         Button btnLinearB = findViewById(R.id.btnLab1LinearB);

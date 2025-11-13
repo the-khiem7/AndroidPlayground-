@@ -39,6 +39,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation("com.caverock:androidsvg:1.4")
     implementation(libs.recyclerview)
     implementation(project(":lab01to05"))
     implementation(project(":lab06"))

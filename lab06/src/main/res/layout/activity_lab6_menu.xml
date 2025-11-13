@@ -1,29 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center">
+    android:background="?attr/colorSurfaceVariant">
 
-    <Button
-        android:id="@+id/btnLab6Exercise1"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.Material3.Toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Exercise 1 – Options Menu"
-        android:layout_marginBottom="12dp" />
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:backgroundTint="?attr/colorPrimaryContainer"
+        android:title="Lab 6 – Option Menu"
+        android:subtitle="Khám phá 3 phong cách menu"
+        app:navigationIcon="@drawable/ic_arrow_back" />
 
-    <Button
-        android:id="@+id/btnLab6Exercise2"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Exercise 2 – Context Menu"
-        android:layout_marginBottom="12dp" />
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <Button
-        android:id="@+id/btnLab6Exercise3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Exercise 3 – Popup Menu" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-</LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="So sánh Option, Context và Popup menu"
+                        android:textAppearance="?attr/textAppearanceTitleMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Thử từng loại để xem cách inflate menu và bắt sự kiện."
+                        android:textAppearance="?attr/textAppearanceBodyMedium" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLab6Exercise1"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Exercise 1 – Options menu" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLab6Exercise2"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Exercise 2 – Context menu" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLab6Exercise3"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exercise 3 – Popup menu" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

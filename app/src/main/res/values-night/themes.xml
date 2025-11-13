@@ -1,7 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.AndroidPlayGround" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/pg_primary</item>
+        <item name="colorOnPrimary">@color/pg_on_primary</item>
+        <item name="colorSecondary">@color/pg_secondary</item>
+        <item name="colorOnSecondary">@color/pg_on_secondary</item>
+        <item name="colorSurface">@color/pg_surface</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurfaceVariant">@color/pg_surface_highlight</item>
+        <item name="colorOnSurfaceVariant">@color/pg_text_muted</item>
+        <item name="android:colorBackground">@color/pg_background</item>
+        <item name="colorOutline">@color/pg_outline</item>
     </style>
 </resources>

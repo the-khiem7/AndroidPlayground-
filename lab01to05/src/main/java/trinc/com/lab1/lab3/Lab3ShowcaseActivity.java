@@ -6,6 +6,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.appbar.MaterialToolbar;
+
 import trinc.com.lab1.R;
 
 /**
@@ -17,6 +19,9 @@ public class Lab3ShowcaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab3_showcase);
+
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(v -> finish());
 
         Button btnLab30 = findViewById(R.id.btnLab3Main);
         Button btnLab31 = findViewById(R.id.btnLab31);

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.lab6.exercise1.Exercise1Activity;
 import com.example.lab6.exercise2.Exercise2Activity;
 import com.example.lab6.exercise3.Exercise3Activity;
+import com.google.android.material.appbar.MaterialToolbar;
 
 /**
  * Presents quick shortcuts to the three option menu exercises.
@@ -19,6 +20,9 @@ public class Lab6MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab6_menu);
+
+        MaterialToolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationOnClickListener(v -> finish());
 
         Button btnExercise1 = findViewById(R.id.btnLab6Exercise1);
         Button btnExercise2 = findViewById(R.id.btnLab6Exercise2);

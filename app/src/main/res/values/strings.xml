@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">AndroidPlayGround</string>
+    <string name="app_name">Android Lab Playground</string>
     <string name="playground_title">Android Lab Playground</string>
+    <string name="playground_subtitle">Khám phá mọi bài lab chỉ với một cú chạm.</string>
+    <string name="playground_section_hint">Chọn một lab để bắt đầu</string>
+    <string name="playground_lab_count">%1$d labs sẵn sàng</string>
+    <string name="playground_hero_highlight">Mobile Programing 392</string>
 </resources>
