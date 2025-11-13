@@ -75,25 +75,25 @@ public class MainActivity extends AppCompatActivity {
                 "Lab 2 – Random & Calculator",
                 "Random number generator plus basic calculator.",
                 2,
-                ctx -> new Intent(ctx, trinc.com.lab1.Lab2Activity.class)
+                ctx -> new Intent(ctx, trinc.com.lab2.Lab2Activity.class)
         ));
         labs.add(createLab(
                 "Lab 3 – List & CRUD",
                 "Custom adapter and simple CRUD samples.",
                 3,
-                ctx -> new Intent(ctx, trinc.com.lab1.lab3.Lab3ShowcaseActivity.class)
+                ctx -> new Intent(ctx, trinc.com.lab3.Lab3ShowcaseActivity.class)
         ));
         labs.add(createLab(
                 "Lab 4 – Order Flow",
                 "Food & drink ordering with custom activities.",
                 4,
-                ctx -> new Intent(ctx, trinc.com.lab1.lab4.Lab4Activity.class)
+                ctx -> new Intent(ctx, trinc.com.lab4.Lab4Activity.class)
         ));
         labs.add(createLab(
                 "Lab 5 – Modules & Users",
                 "Recycler/Grid exercises with dialogs.",
                 5,
-                ctx -> new Intent(ctx, trinc.com.lab1.lab5.Lab5ShowcaseActivity.class)
+                ctx -> new Intent(ctx, trinc.com.lab5.Lab5ShowcaseActivity.class)
         ));
         labs.add(createLab(
                 "Lab 6 – Option Menus",

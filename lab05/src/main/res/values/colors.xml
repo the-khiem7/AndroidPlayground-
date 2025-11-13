@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="pg_background">#FDFEFF</color>
+    <color name="pg_surface">#FFFFFF</color>
+    <color name="pg_surface_highlight">#EDF0FF</color>
+    <color name="pg_text">#1B1B1B</color>
+    <color name="pg_text_muted">#6B7A95</color>
+    <color name="pg_outline">#CDD8F1</color>
+
+    <color name="lab_accent_1">#FF8A65</color>
+    <color name="lab_accent_2">#4DB6AC</color>
+    <color name="lab_accent_3">#9575CD</color>
+    <color name="lab_accent_4">#F06292</color>
+</resources>
