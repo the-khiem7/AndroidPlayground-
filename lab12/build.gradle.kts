@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.fragmentbottomnavigation"
+    namespace = "com.example.lab12"
     compileSdk = 36
 
     defaultConfig {

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "trinc.com.lab4"
+    namespace = "com.example.lab4"
     compileSdk = 36
 
     defaultConfig {

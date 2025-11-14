@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.khiemnvd_androidlab14_google_map"
+    namespace = "com.example.lab14"
     compileSdk = 36
 
     defaultConfig {

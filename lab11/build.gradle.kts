@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.prm392_lab_11_api"
+    namespace = "com.example.lab11"
     compileSdk = 36
 
     defaultConfig {

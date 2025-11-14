@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.demodatabase"
+    namespace = "com.example.lab10"
     compileSdk = 36
 
     defaultConfig {

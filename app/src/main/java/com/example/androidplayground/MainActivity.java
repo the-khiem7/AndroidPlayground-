@@ -69,31 +69,31 @@ public class MainActivity extends AppCompatActivity {
                 "Lab 1 – Layouts",
                 "Linear, Relative and Constraint layout samples.",
                 1,
-                ctx -> new Intent(ctx, trinc.com.lab1.Lab1ShowcaseActivity.class)
+                ctx -> new Intent(ctx, com.example.lab1.Lab1ShowcaseActivity.class)
         ));
         labs.add(createLab(
                 "Lab 2 – Random & Calculator",
                 "Random number generator plus basic calculator.",
                 2,
-                ctx -> new Intent(ctx, trinc.com.lab2.Lab2Activity.class)
+                ctx -> new Intent(ctx, com.example.lab2.Lab2Activity.class)
         ));
         labs.add(createLab(
                 "Lab 3 – List & CRUD",
                 "Custom adapter and simple CRUD samples.",
                 3,
-                ctx -> new Intent(ctx, trinc.com.lab3.Lab3ShowcaseActivity.class)
+                ctx -> new Intent(ctx, com.example.lab3.Lab3ShowcaseActivity.class)
         ));
         labs.add(createLab(
                 "Lab 4 – Order Flow",
                 "Food & drink ordering with custom activities.",
                 4,
-                ctx -> new Intent(ctx, trinc.com.lab4.Lab4Activity.class)
+                ctx -> new Intent(ctx, com.example.lab4.Lab4Activity.class)
         ));
         labs.add(createLab(
                 "Lab 5 – Modules & Users",
                 "Recycler/Grid exercises with dialogs.",
                 5,
-                ctx -> new Intent(ctx, trinc.com.lab5.Lab5ShowcaseActivity.class)
+                ctx -> new Intent(ctx, com.example.lab5.Lab5ShowcaseActivity.class)
         ));
         labs.add(createLab(
                 "Lab 6 – Option Menus",
@@ -123,31 +123,31 @@ public class MainActivity extends AppCompatActivity {
                 "Lab 10 – Database + API",
                 "Room, Retrofit and Glide powered catalog.",
                 10,
-                ctx -> new Intent(ctx, com.example.demodatabase.SignInActivity.class)
+                ctx -> new Intent(ctx, com.example.lab10.SignInActivity.class)
         ));
         labs.add(createLab(
                 "Lab 11 – REST API",
                 "RecyclerView with Retrofit and swipe refresh.",
                 11,
-                ctx -> new Intent(ctx, com.example.prm392_lab_11_api.MainActivity.class)
+                ctx -> new Intent(ctx, com.example.lab11.MainActivity.class)
         ));
         labs.add(createLab(
                 "Lab 12 – Bottom Navigation",
                 "Fragments, Navigation component and ViewModel.",
                 12,
-                ctx -> new Intent(ctx, com.example.fragmentbottomnavigation.MainActivity.class)
+                ctx -> new Intent(ctx, com.example.lab12.MainActivity.class)
         ));
         labs.add(createLab(
                 "Lab 13 – Firebase Auth",
                 "Email/password auth with verification flow.",
                 13,
-                ctx -> new Intent(ctx, com.example.trancongtuong_se181735_lab13_authbyemail.MainActivity.class)
+                ctx -> new Intent(ctx, com.example.lab13.MainActivity.class)
         ));
         labs.add(createLab(
                 "Lab 14 – Maps & Location",
                 "OpenStreetMap with location permissions.",
                 14,
-                ctx -> new Intent(ctx, com.example.khiemnvd_androidlab14_google_map.MainActivity.class)
+                ctx -> new Intent(ctx, com.example.lab14.MainActivity.class)
         ));
         return labs;
     }

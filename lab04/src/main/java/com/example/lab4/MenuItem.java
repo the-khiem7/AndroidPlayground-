@@ -1,0 +1,20 @@
+package com.example.lab4;
+
+public class MenuItem {
+    private String name;
+    private String desc;
+    private int price;
+    private int image;
+
+    public MenuItem(String name, String desc, int price, int image) {
+        this.name = name;
+        this.desc = desc;
+        this.price = price;
+        this.image = image;
+    }
+
+    public String getName() { return name; }
+    public String getDesc() { return desc; }
+    public int getPrice() { return price; }
+    public int getImage() { return image; }
+}

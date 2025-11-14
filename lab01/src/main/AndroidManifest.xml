@@ -11,19 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LAB1">
         <activity
-            android:name="trinc.com.lab1.ConstrainLayout"
+            android:name="com.example.lab1.ConstrainLayout"
             android:exported="false" />
         <activity
-            android:name="trinc.com.lab1.RelativeLayout"
+            android:name="com.example.lab1.RelativeLayout"
             android:exported="false" />
         <activity
-            android:name="trinc.com.lab1.LinearLayoutB"
+            android:name="com.example.lab1.LinearLayoutB"
             android:exported="false" />
         <activity
-            android:name="trinc.com.lab1.LinearLayoutA"
+            android:name="com.example.lab1.LinearLayoutA"
             android:exported="false" />
         <activity
-            android:name="trinc.com.lab1.Lab1ShowcaseActivity"
+            android:name="com.example.lab1.Lab1ShowcaseActivity"
             android:exported="false" />
     </application>
 

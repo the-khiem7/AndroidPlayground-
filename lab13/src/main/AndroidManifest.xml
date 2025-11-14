@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name="com.example.trancongtuong_se181735_lab13_authbyemail.MainActivity"
+            android:name="com.example.lab13.MainActivity"
             android:exported="false" />
     </application>
 

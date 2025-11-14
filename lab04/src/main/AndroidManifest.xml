@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LAB1">
         <activity
-            android:name="trinc.com.lab4.DrinkActivity"
+            android:name="com.example.lab4.DrinkActivity"
             android:exported="false" />
         <activity
-            android:name="trinc.com.lab4.FoodActivity"
+            android:name="com.example.lab4.FoodActivity"
             android:exported="false" />
         <activity
-            android:name="trinc.com.lab4.Lab4Activity"
+            android:name="com.example.lab4.Lab4Activity"
             android:exported="false" />
     </application>
 
